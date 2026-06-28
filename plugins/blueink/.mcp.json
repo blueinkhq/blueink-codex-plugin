@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "blueink": {
+      "url": "https://mcp.blueink.com/mcp",
+      "transport": "http"
+    }
+  }
+}

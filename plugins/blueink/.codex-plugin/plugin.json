@@ -1,0 +1,11 @@
+{
+  "name": "blueink",
+  "displayName": "Blueink",
+  "description": "Blueink eSignature plugin for Codex. Send, sign, and manage documents programmatically using the Blueink eSignature API.",
+  "version": "1.0.0",
+  "author": "Blueink",
+  "homepage": "https://blueink.com",
+  "skills": [
+    "skills/blueink"
+  ]
+}
