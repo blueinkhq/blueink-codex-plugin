@@ -1,0 +1,20 @@
+{
+  "name": "blueink",
+  "interface": {
+    "displayName": "Blueink"
+  },
+  "plugins": [
+    {
+      "name": "blueink",
+      "source": {
+        "source": "local",
+        "path": "./plugins/blueink"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
