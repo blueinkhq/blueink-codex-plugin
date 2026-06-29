@@ -1,8 +1,10 @@
 {
   "mcpServers": {
     "blueink": {
+      "type": "http",
       "url": "https://mcp.blueink.com/mcp",
-      "transport": "http"
+      "title": "Blueink",
+      "description": "Connect to the Blueink remote MCP server."
     }
   }
 }

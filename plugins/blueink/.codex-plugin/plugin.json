@@ -1,11 +1,36 @@
 {
   "name": "blueink",
-  "displayName": "Blueink",
-  "description": "Blueink eSignature plugin for Codex. Send, sign, and manage documents programmatically using the Blueink eSignature API.",
   "version": "1.0.0",
-  "author": "Blueink",
-  "homepage": "https://blueink.com",
-  "skills": [
-    "skills/blueink"
-  ]
+  "description": "Manage Blueink envelopes, templates, signers, and completed bundle files from Codex.",
+  "author": {
+    "name": "Blueink"
+  },
+  "homepage": "https://www.blueink.com",
+  "keywords": [
+    "blueink",
+    "esignature",
+    "contracts",
+    "envelopes",
+    "signatures"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Blueink",
+    "shortDescription": "Manage e-signature envelopes from Codex.",
+    "longDescription": "Blueink connects Codex to secure, signer-friendly eSignature tools through the Blueink remote MCP server so you can search envelopes, inspect signer status, list templates, create envelopes, and retrieve completed bundle files.",
+    "developerName": "Blueink",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "brandColor": "#0B63CE",
+    "defaultPrompt": [
+      "Find Blueink envelopes waiting on signatures.",
+      "Search Blueink envelopes for a customer.",
+      "Create a test Blueink envelope from a template."
+    ]
+  },
+  "mcpServers": "./.mcp.json"
 }

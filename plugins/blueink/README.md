@@ -1,21 +1,23 @@
 # Blueink Plugin for Codex
 
-The Blueink plugin lets Codex agents interact with the [Blueink](https://blueink.com) eSignature platform. Using this plugin, an agent can:
+The Blueink plugin lets Codex agents interact with the [Blueink](https://www.blueink.com) eSignature platform. Using this plugin, an agent can:
 
-- Prepare and send signature packets (bundles) to one or more signers
-- Retrieve the status of packets and individual signers
-- List and search existing packets
-- Cancel or void packets
-- Download signed documents
+- Search envelopes with pagination.
+- Retrieve envelope details.
+- Inspect signer status.
+- List document templates.
+- Create envelopes from templates or documents and signers.
+- List completed bundle files.
+- Download completed bundle PDF data.
 
 ## Requirements
 
-- A Blueink account – sign up at [blueink.com](https://blueink.com)
-- A Blueink API key – generate one from the Blueink dashboard under **Settings → API Keys**
+- A Blueink account.
+- Access to the Blueink remote MCP server configured in `.mcp.json`.
 
 ## Authentication
 
-When you install this plugin, Codex will prompt you for your **Blueink API key**. This key is stored securely and used to authenticate requests to the Blueink MCP server on your behalf.
+The Blueink MCP server is an OAuth protected resource. When Codex connects without credentials, the server advertises Blueink OAuth metadata through the standard `WWW-Authenticate` flow so the client can complete authorization.
 
 ## MCP Server
 
@@ -25,7 +27,7 @@ This plugin connects to the Blueink remote MCP server at:
 https://mcp.blueink.com/mcp
 ```
 
-All API calls are proxied through this server so your API key is never exposed in client-side code.
+All Blueink operations are routed through this remote MCP server.
 
 ## Local Development
 
@@ -35,8 +37,10 @@ If you are running the Blueink MCP server locally (e.g. with `wrangler dev`), up
 {
   "mcpServers": {
     "blueink": {
+      "type": "http",
       "url": "http://localhost:8787/mcp",
-      "transport": "http"
+      "title": "Blueink",
+      "description": "Connect to the local Blueink MCP server."
     }
   }
 }

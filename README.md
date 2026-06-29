@@ -20,7 +20,7 @@ After adding this marketplace you can also search for **Blueink** in the **Codex
 
 ## What is Blueink?
 
-Blueink is an eSignature platform that lets you send, sign, and manage documents programmatically. This Codex plugin exposes the Blueink API through a remote MCP (Model Context Protocol) server so Codex agents can prepare and send signature packets, track their status, and more.
+Blueink is an eSignature platform that lets you send, sign, and manage documents programmatically. This Codex plugin exposes Blueink through a remote MCP (Model Context Protocol) server so Codex agents can search envelopes, inspect signer status, list templates, create envelopes, and retrieve completed bundle files.
 
 ## Repository Structure
 
