@@ -10,6 +10,22 @@ codex plugin marketplace add blueinkhq/blueink-codex-plugin
 
 will be able to search for **Blueink** in the Codex Plugins tab and install it directly. No central approval is required for a custom marketplace – the GitHub repository URL itself is the marketplace identifier.
 
+## Public marketplace repo pattern
+
+This repo follows the same high-level packaging style as [`openai/codex-plugin-cc`](https://github.com/openai/codex-plugin-cc):
+
+- keep the public repo small and install-focused
+- store marketplace metadata at the repository root
+- store plugin implementation/metadata under `plugins/<name>`
+- provide concise install and usage docs
+- keep private runtime/server implementation code out of the public plugin repo
+
+`openai/codex-plugin-cc` targets Claude Code and therefore uses `.claude-plugin` metadata. This Blueink repository targets Codex and uses the Codex plugin metadata files:
+
+- `.agents/plugins/marketplace.json`
+- `plugins/blueink/.codex-plugin/plugin.json`
+- `plugins/blueink/.mcp.json`
+
 ## Plugin entry point
 
 The marketplace is defined in `.agents/plugins/marketplace.json`. It references the plugin located at `./plugins/blueink`, which in turn contains:
