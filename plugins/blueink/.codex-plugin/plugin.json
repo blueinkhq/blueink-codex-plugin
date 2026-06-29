@@ -30,7 +30,9 @@
       "Find Blueink envelopes waiting on signatures.",
       "Search Blueink envelopes for a customer.",
       "Create a test Blueink envelope from a template."
-    ]
+    ],
+    "composerIcon": "assets/icon.png",
+    "logo": "assets/logo.png"
   },
   "mcpServers": "./.mcp.json"
 }
