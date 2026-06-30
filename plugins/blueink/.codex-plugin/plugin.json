@@ -1,6 +1,6 @@
 {
   "name": "blueink",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Manage Blueink envelopes, templates, signers, and completed bundle files from Codex.",
   "author": {
     "name": "Blueink"
@@ -20,6 +20,9 @@
     "longDescription": "Blueink connects Codex to secure, signer-friendly eSignature tools through the Blueink remote MCP server so you can search envelopes, inspect signer status, list templates, create envelopes, and retrieve completed bundle files.",
     "developerName": "Blueink",
     "category": "Productivity",
+    "websiteURL": "https://www.blueink.com",
+    "privacyPolicyURL": "https://www.blueink.com/privacy-policy",
+    "termsOfServiceURL": "https://www.blueink.com/terms-of-use",
     "capabilities": [
       "Interactive",
       "Read",
@@ -32,7 +35,7 @@
       "Create a test Blueink envelope from a template."
     ],
     "composerIcon": "./assets/icon.png",
-    "logo": "./assets/logo.png"
+    "logo": "./assets/icon.png"
   },
   "mcpServers": "./.mcp.json"
 }
