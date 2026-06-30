@@ -1,6 +1,6 @@
 {
   "name": "blueink",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Manage Blueink envelopes, templates, signers, and completed bundle files from Codex.",
   "author": {
     "name": "Blueink"
@@ -31,8 +31,8 @@
       "Search Blueink envelopes for a customer.",
       "Create a test Blueink envelope from a template."
     ],
-    "composerIcon": "assets/icon.png",
-    "logo": "assets/logo.png"
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/logo.png"
   },
   "mcpServers": "./.mcp.json"
 }
