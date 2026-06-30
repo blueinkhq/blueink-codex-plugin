@@ -32,7 +32,7 @@ The marketplace is defined in `.agents/plugins/marketplace.json`. It references 
 
 - `.codex-plugin/plugin.json` – plugin metadata (name, display name, description, etc.)
 - `.mcp.json` – the MCP server endpoint that Codex connects to
-- `skills/blueink/SKILL.md` – the skill definition exposed to the agent
+- `assets/` – plugin logo and icon assets
 
 ## MCP server endpoint
 
@@ -50,7 +50,7 @@ Being discoverable from a custom marketplace (this repo) is separate from being 
 
 ## Releasing a new version
 
-1. Update the relevant files (`plugin.json`, `SKILL.md`, `.mcp.json`, etc.).
+1. Update the relevant files (`plugin.json`, `.mcp.json`, assets, docs, etc.).
 2. Commit and push to `main`.
 3. Codex users who have already added this marketplace will receive the updated plugin metadata the next time Codex refreshes marketplace data.
 

@@ -58,9 +58,7 @@ blueink-codex-plugin/
         plugin.json           # Plugin metadata
       .mcp.json               # MCP server endpoint configuration
       README.md               # Plugin-level documentation
-      skills/
-        blueink/
-          SKILL.md            # Skill definition used by the agent
+      assets/                 # Plugin logo and icon assets
   README.md                   # This file
   PUBLISHING.md               # Notes on how this marketplace is published
 ```

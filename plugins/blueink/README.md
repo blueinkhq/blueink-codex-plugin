@@ -48,6 +48,6 @@ If you are running the Blueink MCP server locally (e.g. with `wrangler dev`), up
 
 > **Note:** Do not commit a localhost URL to this public repository. Local development configuration is machine-specific and will break the plugin for other users.
 
-## Skills
+## Plugin metadata
 
-- **blueink** – core eSignature skill (see `skills/blueink/SKILL.md`)
+This plugin is MCP-only. It does not bundle Codex skills; behavior is driven by the remote Blueink MCP server plus the plugin manifest metadata.

@@ -1,6 +1,6 @@
 {
   "name": "blueink",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Manage Blueink envelopes, templates, signers, and completed bundle files from Codex.",
   "author": {
     "name": "Blueink"
@@ -13,7 +13,6 @@
     "envelopes",
     "signatures"
   ],
-  "skills": "./skills/",
   "interface": {
     "displayName": "Blueink",
     "shortDescription": "Manage e-signature envelopes from Codex.",
